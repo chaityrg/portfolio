@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaity Rani Ghosh | Portfolio</title>
+  <meta name="description" content="Chaity Rani Ghosh — Portfolio">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" title="Chaity Rani Ghosh Portfolio">
+        <span class="brand-text">CHAITY</span><span class="brand-dot">.</span>
+      </a>
+
+      <div class="nav-links-wrap" id="navLinks">
+        <nav class="nav-links">
+          <a href="#about" class="nav-item">About</a>
+          <a href="#skills" class="nav-item">Skills</a>
+          <a href="#experience" class="nav-item">Experience</a>
+          <a href="#education" class="nav-item">Education</a>
+          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#research" class="nav-item">Research</a>
+          <a href="#achievements" class="nav-item">Achievements</a>
+        </nav>
+
+        <a href="#contact" class="nav-cta-btn">Get In Touch</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO (HOME) -->
+    <section id="home" class="hero-section">
+      <div class="hero-light-beam"></div>
+
+      <!-- Smooth Ambient Background Waves -->
+      <div class="hero-bg-waves" aria-hidden="true">
+        <svg class="wave-svg wave-1" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="var(--accent)" fill-opacity="0.05"
+            d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,144C672,149,768,203,864,218.7C960,235,1056,213,1152,186.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
+        <svg class="wave-svg wave-2" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="var(--accent)" fill-opacity="0.07"
+            d="M0,64L48,90.7C96,117,192,171,288,181.3C384,192,480,160,576,133.3C672,107,768,85,864,106.7C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <h1 class="hero-title reveal-on-scroll">Hello. I'm <span class="highlight-name">Chaity</span> Rani Ghosh</h1>
+          <p class="hero-role reveal-on-scroll delay-1">Researcher in HCI, HAI, ML and Computer Vision.</p>
+
+          <p class="hero-summary reveal-on-scroll delay-2">
+            Computer Science & Engineering graduate from <strong>BRAC University</strong> and Student Researcher at
+            <strong>ELITE Research Lab</strong>. Specialized in constructing trustworthy deep learning models,
+            multimodal diagnostic pipelines, and transparent medical decision support architectures.
+          </p>
+
+          <div class="hero-actions reveal-on-scroll delay-3">
+            <a href="#research" class="btn btn-hero-primary">
+              <span>Explore Research</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+
+            <!-- Download CV Dropdown Button -->
+            <div class="cv-dropdown-wrap" id="cvDropdownWrap">
+              <button class="btn btn-hero-glass cv-dropdown-btn" id="cvDropdownBtn" aria-expanded="false"
+                aria-label="Download CV">
+                <i class="fa-solid fa-download"></i>
+                <span>Download CV</span>
+                <i class="fa-solid fa-chevron-down cv-arrow"></i>
+              </button>
+              <div class="cv-dropdown-menu" id="cvDropdownMenu">
+                <a href="CV_Chaity_Rani_Ghosh.pdf" download class="cv-option-item">
+                  <span>Professional CV</span>
+                </a>
+                <a href="CV_Chaity_Rani_Ghosh.pdf" download class="cv-option-item">
+                  <span>Academic CV</span>
+                </a>
+                <a href="CV_Chaity_Rani_Ghosh.pdf" download class="cv-option-item">
+                  <span>Research CV</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-bar reveal-on-scroll delay-4">
+            <a href="mailto:chaityrg.official@gmail.com" class="social-icon-btn" title="Email" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/chaity-rani-ghosh" target="_blank" rel="noopener"
+              class="social-icon-btn" title="LinkedIn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/chaityrg" target="_blank" rel="noopener" class="social-icon-btn" title="GitHub"
+              aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=2pN1dOcAAAAJ&hl" target="_blank" rel="noopener"
+              class="social-icon-btn" title="Google Scholar" aria-label="Google Scholar">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <a href="https://orcid.org/0009-0005-3586-6060" target="_blank" rel="noopener" class="social-icon-btn"
+              title="ORCID" aria-label="ORCID">
+              <i class="fa-brands fa-orcid"></i>
+            </a>
+            <a href="https://www.youtube.com/@chaityranighosh5899" target="_blank" rel="noopener"
+              class="social-icon-btn" title="YouTube" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photo with Floating Dots & Hover Light Sheen -->
+        <div class="hero-photo-wrap reveal-on-scroll delay-1">
+          <div class="photo-dot dot-1"></div>
+          <div class="photo-dot dot-2"></div>
+          <div class="photo-dot dot-3"></div>
+          <div class="photo-dot dot-4"></div>
+          <div class="photo-card">
+            <img src="assets/profile.jpg" alt="Chaity Rani Ghosh" class="profile-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section id="about" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-label">About</div>
+        <h2 class="section-heading">Background &amp; Academic Mission</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal-on-scroll delay-1">
+            <p>
+              I am a Computer Science and Engineering graduate from BRAC University, now conducting research
+              at the master's level while serving as a Student Researcher at ELITE Research Lab. My academic focus
+              lies at the intersection of <strong>explainable AI (XAI)</strong> and <strong>human-AI interaction
+                (HAI)</strong>&mdash;from
+              synthesizing multimodal clinical diagnostics (radiographs, EHR notes, knowledge graphs) to studying
+              how humans develop cognitive and emotional trust in conversational AI.
+            </p>
+            <p>
+              The core motivation across all my investigations is simple: <em>how can we design machine learning
+                architectures
+                that are not only statistically accurate, but explainable, accountable, and reliably aligned with human
+                experts?</em>
+              I am currently preparing applications for PhD programs in Computer Science to continue this research
+              agenda.
+            </p>
+          </div>
+
+          <div class="stats-grid reveal-on-scroll delay-2">
+            <div class="stat-card">
+              <span class="stat-number">3.77</span>
+              <span class="stat-label">CGPA / 4.00 (High Distinction)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Active Research Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">7</span>
+              <span class="stat-label">Semesters on Dean's &amp; VC's List</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">15%</span>
+              <span class="stat-label">Exam Improvement as TA (CSE330)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS -->
+    <section id="skills" class="section section-alt reveal-on-scroll">
+      <div class="container">
+        <div class="skills-layout">
+          <div class="skills-sticky-col">
+            <div class="section-label">Technical Skills</div>
+            <h2 class="section-heading">
+              <span class="heading-line">Tools &amp;</span>
+              <span class="heading-line">Methodologies</span>
+            </h2>
+            <p class="section-subtext">A comprehensive technical toolkit leveraged across machine learning pipelines,
+              explainable AI architectures, systems engineering, and scientific publications.</p>
+            <a href="#projects" class="skills-cta-link">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+
+          <div class="skills-cards-col">
+            <div class="skills-grid reveal-on-scroll delay-1">
+              <!-- 1. Languages -->
+              <div class="skill-panel">
+                <div class="panel-header">
+                  <h3 class="panel-title">Languages</h3>
+                  <i class="fa-solid fa-code panel-icon"></i>
+                </div>
+                <div class="tag-wrap">
+                  <span class="tech-tag"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="tech-tag"><i class="fa-brands fa-java"></i> Java</span>
+                  <span class="tech-tag"><i class="fa-solid fa-code"></i> C / C++</span>
+                  <span class="tech-tag"><i class="fa-solid fa-database"></i> SQL</span>
+                  <span class="tech-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                  <span class="tech-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                  <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+                </div>
+              </div>
+
+              <!-- 2. ML, Deep Learning & Vision -->
+              <div class="skill-panel">
+                <div class="panel-header">
+                  <h3 class="panel-title">ML, Deep Learning &amp; Vision</h3>
+                  <i class="fa-solid fa-brain panel-icon"></i>
+                </div>
+                <div class="tag-wrap">
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">TensorFlow</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Hugging Face</span>
+                  <span class="tech-tag">DenseNet121</span>
+                  <span class="tech-tag">ResNet50</span>
+                  <span class="tech-tag">BERT</span>
+                  <span class="tech-tag">VLMs</span>
+                  <span class="tech-tag">XGBoost</span>
+                </div>
+              </div>
+
+              <!-- 3. Systems, Networking & Tools -->
+              <div class="skill-panel">
+                <div class="panel-header">
+                  <h3 class="panel-title">Systems, Networking &amp; Tools</h3>
+                  <i class="fa-solid fa-server panel-icon"></i>
+                </div>
+                <div class="tag-wrap">
+                  <span class="tech-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                  <span class="tech-tag"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+                  <span class="tech-tag"><i class="fa-brands fa-linux"></i> Linux / Bash</span>
+                  <span class="tech-tag">Ryu SDN Controller</span>
+                  <span class="tech-tag">Mininet</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                </div>
+              </div>
+
+              <!-- 4. Academic Standards & HCI -->
+              <div class="skill-panel">
+                <div class="panel-header">
+                  <h3 class="panel-title">Academic Standards &amp; HCI</h3>
+                  <i class="fa-solid fa-book-bookmark panel-icon"></i>
+                </div>
+                <div class="tag-wrap">
+                  <span class="tech-tag">LaTeX / Overleaf</span>
+                  <span class="tech-tag">IEEE / ACM Standards</span>
+                  <span class="tech-tag">Mixed-Method HCI</span>
+                  <span class="tech-tag">Survey Protocol Design</span>
+                  <span class="tech-tag">Literature Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. EXPERIENCE -->
+    <section id="experience" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-label">Professional &amp; Research Journey</div>
+        <h2 class="section-heading">Research &amp; Work Experience</h2>
+        <p class="section-subtext">A timeline of academic research appointments, engineering roles, and university
+          teaching assistantships.</p>
+
+        <div class="experience-timeline reveal-on-scroll delay-1">
+
+          <!-- Experience 1 -->
+          <div class="timeline-item active-role">
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+              <span class="node-pulse"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-header-main">
+                  <div class="title-with-badge">
+                    <h3 class="entry-title">Student Researcher</h3>
+                  </div>
+                  <div class="entry-org">
+                    <span class="org-name"><i class="fa-solid fa-building"></i> ELITE Research Lab</span>
+                    <span class="org-divider">&middot;</span>
+                    <span class="location-text"><i class="fa-solid fa-location-dot"></i> Queens, NY, USA (Remote)</span>
+                  </div>
+                </div>
+                <div class="period-badge current-period">
+                  <span class="live-dot"></span>
+                  <span>Sep 2026 &mdash; Present</span>
+                </div>
+              </div>
+              <ul class="entry-points">
+                <li><i class="fa-solid fa-chevron-right point-arrow"></i> Investigating Human-AI Interaction (HAI)
+                  utilizing Natural Language Processing (NLP) and Large Language Models.</li>
+                <li><i class="fa-solid fa-chevron-right point-arrow"></i> Designing evaluation protocols to assess
+                  usability, transparency, and calibrated user trust in AI decision interfaces.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-header-main">
+                  <div class="title-with-badge">
+                    <h3 class="entry-title">Technology Intern</h3>
+                  </div>
+                  <div class="entry-org">
+                    <span class="org-name"><i class="fa-solid fa-building"></i> Technology Unit, BRAC
+                      International</span>
+                    <span class="org-divider">&middot;</span>
+                    <span class="location-text"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+                  </div>
+                </div>
+                <div class="period-badge">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Jun 2025 &mdash; Dec 2025</span>
+                </div>
+              </div>
+              <ul class="entry-points">
+                <li><i class="fa-solid fa-chevron-right point-arrow"></i> Conducted functional testing, debugging, and
+                  systematic technical documentation of enterprise software tools.</li>
+                <li><i class="fa-solid fa-chevron-right point-arrow"></i> Assisted in maintenance, quality assurance,
+                  and deployment of internal technology systems and services.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-header-main">
+                  <div class="title-with-badge">
+                    <h3 class="entry-title">Undergraduate Teaching Assistant</h3>
+                  </div>
+                  <div class="entry-org">
+                    <span class="org-name"><i class="fa-solid fa-building"></i> Dept. of CSE &amp; MNS, BRAC
+                      University</span>
+                    <span class="org-divider">&middot;</span>
+                    <span class="location-text"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+                  </div>
+                </div>
+                <div class="period-badge">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Oct 2023 &mdash; Jan 2025</span>
+                </div>
+              </div>
+              <ul class="entry-points">
+                <li><i class="fa-solid fa-chevron-right point-arrow"></i> Delivered problem-solving tutorial sessions
+                  for <strong>Numerical Methods (CSE330)</strong> and <strong>Complex Variables &amp; Fourier Analysis
+                    (MAT215)</strong>.</li>
+                <li><i class="fa-solid fa-chevron-right point-arrow"></i> Mentored students through complex theoretical
+                  derivations, helping elevate cohort exam scores by 15%.</li>
+                <li><i class="fa-solid fa-chevron-right point-arrow"></i> Evaluated and provided detailed technical
+                  feedback on 300+ assignments per academic term.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION -->
+    <section id="education" class="section section-alt reveal-on-scroll">
+      <div class="container">
+        <div class="section-label">Education</div>
+        <h2 class="section-heading">Academic Journey</h2>
+        <p class="section-subtext">Building a strong theoretical foundation to fuel innovative research and engineering
+          solutions.</p>
+
+        <div class="edu-timeline reveal-on-scroll delay-1">
+          <!-- Central Vertical Line -->
+          <div class="edu-line"></div>
+
+          <!-- Item 1: M.Sc. (In Progress) -->
+          <div class="edu-row ongoing-row">
+            <!-- Left Year/Status -->
+            <div class="edu-year-col">
+              <div class="edu-big-year">Present</div>
+              <div class="edu-year-label ongoing-label"><span class="live-dot"></span> IN PROGRESS</div>
+            </div>
+
+            <!-- Center Node Icon -->
+            <div class="edu-node-col">
+              <div class="edu-node">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="edu-card-col">
+              <div class="edu-card">
+                <h3 class="education-card-title">Master of Science</h3>
+                <div class="education-card-sub">Computer Science &amp; Engineering</div>
+                <div class="card-inst">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <div>
+                    <strong>BRAC University</strong>
+                    <span>Dhaka, Bangladesh</span>
+                  </div>
+                </div>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Specialization</span>
+                    <span class="meta-val">Data Science</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">CGPA</span>
+                    <span class="meta-cgpa-pill"><strong></strong> / 4.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: B.Sc. (Completed) -->
+          <div class="edu-row">
+            <!-- Left Year/Status -->
+            <div class="edu-year-col">
+              <div class="edu-big-year">2025</div>
+              <div class="edu-year-label">GRADUATED</div>
+            </div>
+
+            <!-- Center Node Icon -->
+            <div class="edu-node-col">
+              <div class="edu-node">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="edu-card-col">
+              <div class="edu-card">
+                <h3 class="education-card-title">Bachelor of Science</h3>
+                <div class="education-card-sub">Computer Science &amp; Engineering</div>
+                <div class="card-inst">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <div>
+                    <strong>BRAC University</strong>
+                    <span>Dhaka, Bangladesh</span>
+                  </div>
+                </div>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Standing</span>
+                    <span class="meta-val">High Distinction</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">CGPA</span>
+                    <span class="meta-cgpa-pill"><strong>3.77</strong> / 4.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PROJECTS -->
+    <section id="projects" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-label">Projects</div>
+        <h2 class="section-heading">Featured Works</h2>
+        <p class="section-subtext">Open-source implementations, benchmarks, and machine learning pipelines.</p>
+
+        <div class="projects-grid reveal-on-scroll delay-1">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-poster">
+              <!-- Add your project image here: <img src="path/to/image.png" alt="Coronary Heart Disease Risk Predictor" class="project-img"> -->
+              <img src="" alt="" class="project-img" />
+              <div class="project-poster-gradient"></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-overlap-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div class="project-meta-row">
+                <span class="project-category">HEALTHCARE AI</span>
+                <span class="project-date"><i class="fa-regular fa-calendar-alt"></i> 2025</span>
+              </div>
+              <h3 class="project-title">Coronary Heart Disease Risk Predictor</h3>
+              <p class="project-tagline">Clinical Predictive Modeling &amp; Risk Stratification System</p>
+              <p class="project-desc">
+                Clinical predictive modeling tool utilizing a hybrid ensemble to predict 10-year risk of coronary
+                disease
+                with automated hyperparameter tuning and cross-validation.
+              </p>
+              <div class="project-tags">
+                <span class="tech-pill tech-python">Python</span>
+                <span class="tech-pill tech-scikit">Scikit-learn</span>
+                <span class="tech-pill tech-numpy">NumPy</span>
+                <span class="tech-pill tech-pandas">Pandas</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="projects/coronary-heart-disease.html" class="project-details-link">
+                  <span>MORE DETAILS</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-poster">
+              <!-- Add your project image here: <img src="path/to/image.png" alt="Handwritten Bangla Name Recognition & XAI" class="project-img"> -->
+              <img src="" alt="" class="project-img" />
+              <div class="project-poster-gradient"></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-overlap-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="project-meta-row">
+                <span class="project-category">COMPUTER VISION</span>
+                <span class="project-date"><i class="fa-regular fa-calendar-alt"></i> 2025</span>
+              </div>
+              <h3 class="project-title">Handwritten Bangla Name Recognition &amp; XAI</h3>
+              <p class="project-tagline">Deep Learning Recognition &amp; Explainability Pipeline</p>
+              <p class="project-desc">
+                Computer vision transfer learning pipeline on custom self-curated dataset, featuring ResNet50 (83.89%
+                test
+                accuracy), Grad-CAM heatmaps, and local LIME explanations.
+              </p>
+              <div class="project-tags">
+                <span class="tech-pill tech-tf">TensorFlow</span>
+                <span class="tech-pill tech-resnet">ResNet50</span>
+                <span class="tech-pill tech-xai">Grad-CAM</span>
+                <span class="tech-pill tech-lime">LIME</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="projects/bangla-name-recognition.html" class="project-details-link">
+                  <span>MORE DETAILS</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-poster">
+              <!-- Add your project image here: <img src="path/to/image.png" alt="Healthy Habits - Diet Planning Platform" class="project-img"> -->
+              <img src="" alt="" class="project-img" />
+              <div class="project-poster-gradient"></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-overlap-icon">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <div class="project-meta-row">
+                <span class="project-category">FULL STACK WEB APPLICATION</span>
+                <span class="project-date"><i class="fa-regular fa-calendar-alt"></i> 2024</span>
+              </div>
+              <h3 class="project-title">Healthy Habits &mdash; Diet Planning Platform</h3>
+              <p class="project-tagline">Interactive Nutrition Tracker &amp; Caloric Planner</p>
+              <p class="project-desc">
+                Full-stack MVC web platform enabling users to track, schedule, and plan nutrition with relational schema
+                validation and caloric calculators.
+              </p>
+              <div class="project-tags">
+                <span class="tech-pill tech-laravel">Laravel</span>
+                <span class="tech-pill tech-php">PHP</span>
+                <span class="tech-pill tech-mysql">MySQL</span>
+                <span class="tech-pill tech-js">JavaScript</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="projects/healthy-habits.html" class="project-details-link">
+                  <span>MORE DETAILS</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 (Extra - hidden initially) -->
+          <div class="project-card project-card-extra">
+            <div class="project-poster">
+              <!-- Add your project image here: <img src="path/to/image.png" alt="Diagnostic Diabetes Predictor" class="project-img"> -->
+              <img src="" alt="" class="project-img" />
+              <div class="project-poster-gradient"></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-overlap-icon">
+                <i class="fa-solid fa-dna"></i>
+              </div>
+              <div class="project-meta-row">
+                <span class="project-category">PREDICTIVE ANALYTICS</span>
+                <span class="project-date"><i class="fa-regular fa-calendar-alt"></i> 2024</span>
+              </div>
+              <h3 class="project-title">Diagnostic Diabetes Predictor</h3>
+              <p class="project-tagline">Clinical Metabolic Marker Classification Engine</p>
+              <p class="project-desc">
+                Supervised classification pipeline comparing logistic regression, SVM, and random forests on clinical
+                metabolic markers.
+              </p>
+              <div class="project-tags">
+                <span class="tech-pill tech-python">Python</span>
+                <span class="tech-pill tech-scikit">Scikit-learn</span>
+                <span class="tech-pill tech-chart">Matplotlib</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="projects/diagnostic-diabetes.html" class="project-details-link">
+                  <span>MORE DETAILS</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Projects Button -->
+        <div class="projects-action-wrap">
+          <button type="button" id="viewAllProjectsBtn" class="projects-toggle-btn" aria-expanded="false">
+            <span class="btn-text">View All Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. RESEARCH (PUBLICATIONS & WORKING PAPERS) -->
+    <section id="research" class="section section-alt reveal-on-scroll">
+      <div class="container">
+        <div class="section-label">Research</div>
+        <h2 class="section-heading">Publications &amp; Manuscripts</h2>
+        <p class="section-subtext">Peer-reviewed conference proceedings, journal papers under review, and preprints.</p>
+
+        <div class="papers-flow reveal-on-scroll delay-1">
+          <!-- Paper 1 -->
+          <div class="paper-box">
+            <div class="paper-header">
+              <span class="status-tag conf">IEEE AIMLA 2025</span>
+              <span class="paper-year">2025</span>
+            </div>
+            <h3 class="paper-title">Hybrid Q-Learning with VLMs Reasoning Features</h3>
+            <p class="paper-authors">
+              Ashraf, M. S., Akuthota, V., Prapty, F. T., Sultana, S., Riad, J. A., <strong class="author-me">Ghosh, C.
+                R.</strong>, Hasan, N., &amp; Anwar, A. S.
+            </p>
+            <p class="paper-venue">
+              <em>2025 3rd International Conference on Artificial Intelligence and Machine Learning Applications
+                (AIMLA)</em>, IEEE.
+            </p>
+            <div class="paper-footer">
+              <button class="btn btn-xs btn-outline copy-bib-btn" data-bibtex="@inproceedings{ashraf2025hybrid,
+  title={Hybrid Q-Learning with VLMs Reasoning Features},
+  author={Ashraf, M. S. and Akuthota, V. and Prapty, F. T. and Sultana, S. and Riad, J. A. and Ghosh, Chaity Rani and Hasan, N. and Anwar, A. S.},
+  booktitle={2025 3rd International Conference on Artificial Intelligence and Machine Learning Applications (AIMLA)},
+  year={2025},
+  organization={IEEE}
+}">Copy BibTeX</button>
+            </div>
+          </div>
+
+          <!-- Paper 2 -->
+          <div class="paper-box">
+            <div class="paper-header">
+              <span class="status-tag review">Under Review</span>
+              <span class="paper-year">2025</span>
+            </div>
+            <h3 class="paper-title">Time-Sliced Round Robin (TSRR) Scheduling for Flow-Aware Load Balancing in Software
+              Defined Networks</h3>
+            <p class="paper-authors">
+              <strong class="author-me">Ghosh, C. R.</strong> &middot; Supervisor: Dr. Jannatun Noor Mukta
+            </p>
+            <p class="paper-venue">
+              <em>Under Review at Alexandria Engineering Journal (Elsevier)</em>.
+            </p>
+            <p class="paper-abstract">
+              Introduces an adaptive traffic scheduler for Software Defined Networks combining machine learning flow
+              classification with dynamic time slicing, achieving 91% traffic classification accuracy, 85% jitter
+              reduction, and 89% lower packet loss over static baselines.
+            </p>
+            <div class="paper-footer">
+              <button class="btn btn-xs btn-outline copy-bib-btn" data-bibtex="@article{ghosh2025tsrr,
+  title={Time-Sliced Round Robin (TSRR) Scheduling for Flow-Aware Load Balancing in Software Defined Networks},
+  author={Ghosh, Chaity Rani and Mukta, Jannatun Noor},
+  journal={Alexandria Engineering Journal (Under Review)},
+  year={2025}
+}">Copy BibTeX</button>
+            </div>
+          </div>
+
+          <!-- Paper 3 -->
+          <div class="paper-box">
+            <div class="paper-header">
+              <span class="status-tag preprint">Preprint</span>
+              <span class="paper-year">2026</span>
+            </div>
+            <h3 class="paper-title">Explainable Multimodal Chest X-ray Diagnosis Using Clinical Text and Medical
+              Knowledge Graphs with VLM-based Reasoning</h3>
+            <p class="paper-authors">
+              <strong class="author-me">Ghosh, C. R.</strong> &middot; Supervisor: Dr. Md. Ashraful Alam
+            </p>
+            <p class="paper-venue"><em>Manuscript / Working Paper</em></p>
+            <p class="paper-abstract">
+              Multimodal fusion architecture coupling DenseNet121 visual features, clinical BERT text embeddings, and
+              structured medical graph priors, interpreted using Grad-CAM heatmaps.
+            </p>
+            <div class="paper-tags">
+              <span>DenseNet121</span><span>BERT</span><span>Knowledge Graphs</span><span>Grad-CAM</span>
+            </div>
+          </div>
+
+          <!-- Paper 4 -->
+          <div class="paper-box">
+            <div class="paper-header">
+              <span class="status-tag preprint">Preprint</span>
+              <span class="paper-year">2026</span>
+            </div>
+            <h3 class="paper-title">Machine Learning-Based Coronary Heart Disease Prediction: A Comprehensive Ensemble
+              Approach</h3>
+            <p class="paper-authors">
+              <strong class="author-me">Ghosh, C. R.</strong> &middot; Independent Research
+            </p>
+            <p class="paper-venue"><em>Manuscript / Working Paper</em></p>
+            <p class="paper-abstract">
+              Ensemble framework integrating Decision Trees, Random Forests, and XGBoost with automated feature
+              selection for coronary risk prediction.
+            </p>
+            <div class="paper-tags">
+              <span>XGBoost</span><span>Ensemble Learning</span><span>Feature Selection</span>
+            </div>
+          </div>
+
+          <!-- Paper 5 -->
+          <div class="paper-box">
+            <div class="paper-header">
+              <span class="status-tag preprint">Preprint</span>
+              <span class="paper-year">2025</span>
+            </div>
+            <h3 class="paper-title">Being Heard Without Being Connected: Emotional Dependence on AI Chatbots and Its
+              Perceived Implications for Mental Well-being among University Students</h3>
+            <p class="paper-authors">
+              <strong class="author-me">Ghosh, C. R.</strong> &middot; Supervisor: Dr. Jannatun Noor Mukta
+            </p>
+            <p class="paper-venue"><em>Manuscript / Working Paper</em></p>
+            <p class="paper-abstract">
+              Mixed-methods empirical study assessing anthropomorphic attachment, conversational reliance, and ethical
+              implications of conversational LLMs.
+            </p>
+            <div class="paper-tags">
+              <span>HCI</span><span>Mixed Methods</span><span>AI Ethics</span>
+            </div>
+          </div>
+
+          <!-- Paper 6 -->
+          <div class="paper-box">
+            <div class="paper-header">
+              <span class="status-tag preprint">Preprint</span>
+              <span class="paper-year">2025</span>
+            </div>
+            <h3 class="paper-title">Robust Handwritten Bangla Human Name Recognition Using Deep Learning, Ensemble
+              Models and Explainable AI</h3>
+            <p class="paper-authors">
+              <strong class="author-me">Ghosh, C. R.</strong> &middot; Supervisor: Mr. Annajiat Alim Rasel
+            </p>
+            <p class="paper-venue"><em>Manuscript / Working Paper</em></p>
+            <p class="paper-abstract">
+              Transfer learning framework evaluated on a curated handwritten benchmark, achieving 83.89% test accuracy
+              with ResNet50 and audited via LIME and Grad-CAM.
+            </p>
+            <div class="paper-tags">
+              <span>ResNet50</span><span>LIME</span><span>Grad-CAM</span>
+            </div>
+          </div>
+
+          <!-- Paper 7 -->
+          <div class="paper-box">
+            <div class="paper-header">
+              <span class="status-tag thesis">B.Sc. Thesis</span>
+              <span class="paper-year">2025</span>
+            </div>
+            <h3 class="paper-title">An SDN-based Approach Using RYU Controller for Load Balancing and Performance
+              Evaluation in Hybrid Networks with Machine Learning Algorithms</h3>
+            <p class="paper-authors">
+              <strong class="author-me">Ghosh, C. R.</strong>, Ahsan, N., Islam, M., Noor, R., &amp; Mashrafi, A.
+            </p>
+            <p class="paper-venue">
+              <em>Bachelor's Thesis, Dept. of Computer Science &amp; Engineering, BRAC University</em>, 2025.
+            </p>
+            <div class="paper-footer">
+              <button class="btn btn-xs btn-outline copy-bib-btn" data-bibtex="@mastersthesis{ghosh2025sdn,
+  title={An SDN-based Approach Using RYU Controller for Load Balancing and Performance Evaluation in Hybrid Networks with Machine Learning Algorithms},
+  author={Ghosh, Chaity Rani and Ahsan, N. and Islam, M. and Noor, R. and Mashrafi, A.},
+  school={BRAC University},
+  year={2025}
+}">Copy BibTeX</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ACHIEVEMENTS -->
+    <section id="achievements" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-label">Achievements</div>
+        <h2 class="section-heading">Honors &amp; Certifications</h2>
+
+        <div class="achieve-grid reveal-on-scroll delay-1">
+          <div class="achieve-card">
+            <div class="achieve-type">Academic Honor</div>
+            <h3 class="achieve-title">Dean's List &amp; Vice Chancellor's List</h3>
+            <p class="achieve-text">Recognized for outstanding academic merit in 7 semesters at BRAC University.</p>
+          </div>
+
+          <div class="achieve-card">
+            <div class="achieve-type">Graduation Honor</div>
+            <h3 class="achieve-title">High Distinction Graduate</h3>
+            <p class="achieve-text">Graduated with CGPA 3.77 / 4.00, B.Sc. in Computer Science &amp; Engineering.</p>
+          </div>
+
+          <div class="achieve-card">
+            <div class="achieve-type">Certification</div>
+            <h3 class="achieve-title">Understanding Machine Learning</h3>
+            <p class="achieve-text">DataCamp (2025) &mdash; Machine learning paradigms, validation, and optimization.
+            </p>
+          </div>
+
+          <div class="achieve-card">
+            <div class="achieve-type">Certification</div>
+            <h3 class="achieve-title">Introduction to SQL</h3>
+            <p class="achieve-text">DataCamp (2025) &mdash; Relational querying, complex joins, and aggregations.</p>
+          </div>
+
+          <div class="achieve-card">
+            <div class="achieve-type">Editorial Review</div>
+            <h3 class="achieve-title">Manuscript Under Review</h3>
+            <p class="achieve-text">TSRR scheduling architecture at Alexandria Engineering Journal (Elsevier).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT -->
+    <section id="contact" class="section section-alt reveal-on-scroll">
+      <div class="container">
+        <div class="contact-card reveal-on-scroll delay-1">
+          <div class="section-label">Contact</div>
+          <h2 class="contact-title">Let's Discuss Research or PhD Opportunities</h2>
+          <p class="contact-desc">
+            I am actively exploring PhD openings and research collaborations in Multimodal Machine Learning,
+            Medical AI, and Explainability. Feel free to reach out directly:
+          </p>
+
+          <div class="email-copy-bar">
+            <span class="email-text" id="emailVal">chaityrg.official@gmail.com</span>
+            <button class="btn btn-sm btn-primary" id="copyEmailBtn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+              </svg>
+              <span id="copyEmailText">Copy Email</span>
+            </button>
+            <a href="mailto:chaityrg.official@gmail.com" class="btn btn-sm btn-outline">Compose &rarr;</a>
+          </div>
+
+          <div class="contact-links">
+            <a href="https://scholar.google.com" target="_blank" rel="noopener" class="contact-pill">Google Scholar</a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="contact-pill">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-pill">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>&copy; 2026 Chaity Rani Ghosh &middot; Computer Science &amp; Engineering</span>
+      <a href="#home" class="to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" aria-live="polite">Citation copied to clipboard</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

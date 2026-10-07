@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaity Rani Ghosh | Portfolio</title>
+  <meta name="description"
+    content="Supervised classification pipeline comparing logistic regression, SVM, and random forests on clinical metabolic markers.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand" title="Chaity Rani Ghosh Portfolio">
+        <span class="brand-text">CHAITY</span><span class="brand-dot">.</span>
+      </a>
+
+      <div class="nav-links-wrap" id="navLinks">
+        <nav class="nav-links">
+          <a href="../index.html#about" class="nav-item">About</a>
+          <a href="../index.html#skills" class="nav-item">Skills</a>
+          <a href="../index.html#experience" class="nav-item">Experience</a>
+          <a href="../index.html#education" class="nav-item">Education</a>
+          <a href="../index.html#projects" class="nav-item active">Projects</a>
+          <a href="../index.html#research" class="nav-item">Research</a>
+          <a href="../index.html#achievements" class="nav-item">Achievements</a>
+        </nav>
+
+        <a href="../index.html#contact" class="nav-cta-btn">Get In Touch</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="project-detail-main">
+    <div class="project-detail-container">
+
+      <!-- Breadcrumbs & Back Bar -->
+      <div class="project-back-bar">
+        <a href="../index.html#projects" class="project-back-link">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Back to Projects</span>
+        </a>
+        <span class="project-breadcrumb-badge">Projects / Predictive Analytics</span>
+      </div>
+
+      <!-- Hero Poster Showcase -->
+      <div class="project-hero-showcase">
+        <!-- Add your high-resolution project screenshot here: <img src="../assets/diabetes_preview.png" alt="Diagnostic Diabetes Predictor"> -->
+        <img src="" alt="Diagnostic Diabetes Predictor Preview">
+        <div class="project-showcase-gradient"></div>
+      </div>
+
+      <!-- Main Two-Column Layout -->
+      <div class="project-detail-layout">
+
+        <!-- Left Column: Comprehensive Narrative -->
+        <div class="project-detail-content">
+
+          <!-- Meta Pill Row -->
+          <div class="project-meta-pill-row">
+            <span class="project-category-chip">
+              <i class="fa-solid fa-dna"></i>
+              Predictive Analytics
+            </span>
+            <span class="project-date-chip">
+              <i class="fa-regular fa-calendar-alt"></i>
+              2024 &middot; Supervised Classification
+            </span>
+          </div>
+
+          <h1 class="project-detail-title">Diagnostic Diabetes Predictor</h1>
+          <p class="project-detail-tagline">
+            A supervised classification benchmark evaluating logistic regression, support vector machines, and random
+            forests on clinical metabolic markers for early diabetes risk identification.
+          </p>
+
+          <!-- Section 1: Overview -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Project Overview</span>
+            </h2>
+            <p class="detail-body-text">
+              Type-2 diabetes frequently remains undetected during early glycemic shifts, causing insidious
+              microvascular and cardiovascular damage before a formal clinical diagnosis is rendered.
+            </p>
+            <p class="detail-body-text" style="margin-top: 14px;">
+              This diagnostic pipeline performs rigorous comparative analysis across standard supervised statistical
+              learning models on metabolic indicators (fasting blood glucose, insulin, body mass index, age, and
+              diabetes pedigree function). The project rigorously evaluates trade-offs between model interpretability
+              and predictive power, delivering validated screening recommendations.
+            </p>
+          </section>
+
+          <!-- Section 2: Key Features (2x2 Grid) -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-star"></i>
+              <span>Key Features</span>
+            </h2>
+
+            <div class="detail-feature-grid">
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <h3 class="feature-card-title">Comparative Benchmark Suite</h3>
+                <p class="feature-card-desc">
+                  Benchmarked Logistic Regression, RBF-kernel SVM, Random Forests, and k-NN under uniform
+                  cross-validation folds.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-wand-magic"></i>
+                </div>
+                <h3 class="feature-card-title">Outlier & Zero-Value Treatment</h3>
+                <p class="feature-card-desc">
+                  Replaced biologically implausible zero-value records (e.g. 0 mm skinfold or 0 mg/dL blood pressure)
+                  with median imputation stratified by age bracket.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="feature-card-title">Threshold Tuning for Sensitivity</h3>
+                <p class="feature-card-desc">
+                  Optimized classification decision thresholds to minimize false-negative rates, prioritizing clinical
+                  patient safety in diagnostic screening.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <h3 class="feature-card-title">Feature Importance Analysis</h3>
+                <p class="feature-card-desc">
+                  Quantified Gini impurity reduction and coefficient odds ratios to confirm glucose concentration and
+                  BMI as premier diagnostic indicators.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3: Technical Challenges Faced -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Technical Challenges Faced</span>
+            </h2>
+
+            <div class="detail-info-cards">
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Hidden Missing Data Encoded as Zeroes:</strong> Raw biomedical datasets frequently store null
+                  tests as numerical zeros. Detected and cleansed unnatural distributions in serum insulin and triceps
+                  skin fold thickness before model training.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Feature Scaling Disparities:</strong> Insulin and glucose numerical scales dwarfed pedigree
+                  coefficients. Standardized numerical attributes with z-score normalization to ensure gradient descent
+                  stability for SVM margins.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>False Negative Penalization:</strong> Missing a diabetic patient carries higher clinical
+                  penalty than a false alarm. Applied asymmetric cost matrices during cost-sensitive classification to
+                  penalize false negatives threefold.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 4: Future Roadmap -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-rocket"></i>
+              <span>Improvements & Future Roadmap</span>
+            </h2>
+
+            <div class="detail-info-cards">
+              <div class="detail-info-card">
+                <i class="fa-solid fa-circle-check info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Longitudinal HbA1c Tracking:</strong> Expanding feature schemas to ingest sequential 3-month
+                  HbA1c trajectory data for time-series risk forecasting.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-circle-check info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>API Deployment via FastAPI:</strong> Containerizing the top-performing estimator into a
+                  Dockerized REST microservice for integration with hospital electronic health record (EHR) platforms.
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right Column: Sticky Sidebar -->
+        <aside class="project-detail-sidebar">
+          <div class="sidebar-box">
+            <div class="sidebar-title">
+              <span class="sidebar-title-bar"></span>
+              <span>Tech Stack</span>
+            </div>
+
+            <!-- Stack Group 1 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Languages & Data</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-python">Python</span>
+                <span class="tech-pill tech-numpy">NumPy</span>
+                <span class="tech-pill tech-pandas">Pandas</span>
+              </div>
+            </div>
+
+            <!-- Stack Group 2 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Machine Learning</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-scikit">Scikit-learn</span>
+                <span class="tech-pill tech-tf">Random Forest</span>
+                <span class="tech-pill tech-resnet">SVM (RBF)</span>
+              </div>
+            </div>
+
+            <!-- Stack Group 3 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Visualization</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-chart">Matplotlib</span>
+                <span class="tech-pill tech-xai">Seaborn</span>
+                <span class="tech-pill tech-lime">ROC Curves</span>
+              </div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <!-- CTA Actions -->
+            <div class="sidebar-actions">
+              <a href="https://github.com" target="_blank" rel="noopener" class="sidebar-btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>View Live Demo</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="sidebar-btn-outline">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>&copy; 2026 Chaity Rani Ghosh &middot; Computer Science &amp; Engineering</span>
+      <a href="../index.html#projects" class="to-top">&larr; Back to Projects</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>

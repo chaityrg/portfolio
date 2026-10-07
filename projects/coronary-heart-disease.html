@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaity Rani Ghosh | Portfolio</title>
+  <meta name="description"
+    content="Clinical predictive modeling tool utilizing a hybrid ensemble to predict 10-year risk of coronary disease.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand" title="Chaity Rani Ghosh Portfolio">
+        <span class="brand-text">CHAITY</span><span class="brand-dot">.</span>
+      </a>
+
+      <div class="nav-links-wrap" id="navLinks">
+        <nav class="nav-links">
+          <a href="../index.html#about" class="nav-item">About</a>
+          <a href="../index.html#skills" class="nav-item">Skills</a>
+          <a href="../index.html#experience" class="nav-item">Experience</a>
+          <a href="../index.html#education" class="nav-item">Education</a>
+          <a href="../index.html#projects" class="nav-item active">Projects</a>
+          <a href="../index.html#research" class="nav-item">Research</a>
+          <a href="../index.html#achievements" class="nav-item">Achievements</a>
+        </nav>
+
+        <a href="../index.html#contact" class="nav-cta-btn">Get In Touch</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="project-detail-main">
+    <div class="project-detail-container">
+
+      <!-- Breadcrumbs & Back Bar -->
+      <div class="project-back-bar">
+        <a href="../index.html#projects" class="project-back-link">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Back to Projects</span>
+        </a>
+        <span class="project-breadcrumb-badge">Projects / Healthcare AI</span>
+      </div>
+
+      <!-- Hero Poster Showcase -->
+      <div class="project-hero-showcase">
+        <!-- Add your high-resolution project screenshot here: <img src="../assets/chd_preview.png" alt="Coronary Heart Disease Predictor"> -->
+        <img src="" alt="Coronary Heart Disease Risk Predictor Preview">
+        <div class="project-showcase-gradient"></div>
+      </div>
+
+      <!-- Main Two-Column Layout -->
+      <div class="project-detail-layout">
+
+        <!-- Left Column: Comprehensive Narrative -->
+        <div class="project-detail-content">
+
+          <!-- Meta Pill Row -->
+          <div class="project-meta-pill-row">
+            <span class="project-category-chip">
+              <i class="fa-solid fa-heart-pulse"></i>
+              Healthcare AI
+            </span>
+            <span class="project-date-chip">
+              <i class="fa-regular fa-calendar-alt"></i>
+              2025 &middot; Clinical ML
+            </span>
+          </div>
+
+          <h1 class="project-detail-title">Coronary Heart Disease Risk Predictor</h1>
+          <p class="project-detail-tagline">
+            A hybrid ensemble predictive modeling pipeline engineered to estimate 10-year risk of coronary heart disease
+            with automated hyperparameter tuning and cross-validation.
+          </p>
+
+          <!-- Section 1: Overview -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Project Overview</span>
+            </h2>
+            <p class="detail-body-text">
+              Coronary Heart Disease (CHD) remains one of the world's leading causes of mortality. Early identification
+              of vulnerable patients can significantly alter clinical trajectories through proactive lifestyle
+              interventions and targeted therapies.
+            </p>
+            <p class="detail-body-text" style="margin-top: 14px;">
+              This system implements an end-to-end clinical decision support pipeline. Leveraging patient demographic
+              markers, clinical biomarkers (systolic/diastolic blood pressure, glucose, total cholesterol), and
+              behavioral history from longitudinal cardiovascular datasets, the model calculates personalized 10-year
+              risk probabilities with high sensitivity and calibration.
+            </p>
+          </section>
+
+          <!-- Section 2: Key Features (2x2 Grid) -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-star"></i>
+              <span>Key Features</span>
+            </h2>
+
+            <div class="detail-feature-grid">
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="feature-card-title">Hybrid Ensemble Architecture</h3>
+                <p class="feature-card-desc">
+                  Combines Gradient Boosting, Random Forests, and penalized Logistic Regression via soft-voting to
+                  optimize ROC-AUC and prevent single-estimator bias.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-sliders"></i>
+                </div>
+                <h3 class="feature-card-title">Automated Tuning & Validation</h3>
+                <p class="feature-card-desc">
+                  Utilizes stratified k-fold cross-validation paired with Bayesian hyperparameter optimization to
+                  reliably calibrate predicted risk probabilities.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-filter"></i>
+                </div>
+                <h3 class="feature-card-title">Robust Imputation Pipeline</h3>
+                <p class="feature-card-desc">
+                  Handles missing clinical values through iterative multivariate feature imputation, safeguarding
+                  patient sample distributions without data loss.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h3 class="feature-card-title">Risk Stratification Output</h3>
+                <p class="feature-card-desc">
+                  Translates continuous model confidence scores into standardized low, intermediate, and high risk
+                  strata aligned with clinical practice guidelines.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3: Technical Challenges Faced -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Technical Challenges Faced</span>
+            </h2>
+
+            <div class="detail-info-cards">
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Severe Class Imbalance:</strong> The incidence of positive 10-year cardiac events in screening
+                  cohorts was under 15%. Applied SMOTE-Tomek synthetic oversampling in conjunction with class-weighted
+                  loss functions to elevate recall without inflating false-alarm rates.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Multicollinearity Among Hemodynamic Features:</strong> Systolic and diastolic blood pressure
+                  exhibited tight collinearity. Evaluated Variance Inflation Factor (VIF) scores and engineered
+                  composite pulse pressure indicators to stabilize regression weights.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Model Calibration:</strong> Raw ensemble margins tended towards overconfidence. Implemented
+                  isotonic regression probability calibration, ensuring predicted percentages accurately reflect
+                  empirical cardiovascular event rates.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 4: Future Roadmap -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-rocket"></i>
+              <span>Improvements & Future Roadmap</span>
+            </h2>
+
+            <div class="detail-info-cards">
+              <div class="detail-info-card">
+                <i class="fa-solid fa-circle-check info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>SHAP & LIME Feature Attribution:</strong> Integrating local model explanation dashboards so
+                  clinicians can review which patient metrics contributed most significantly to risk scores.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-circle-check info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Interactive Web Diagnostic UI:</strong> Packaging the pipeline into a lightweight web
+                  dashboard allowing medical practitioners to input patient records and receive immediate prognostic
+                  reports.
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right Column: Sticky Sidebar -->
+        <aside class="project-detail-sidebar">
+          <div class="sidebar-box">
+            <div class="sidebar-title">
+              <span class="sidebar-title-bar"></span>
+              <span>Tech Stack</span>
+            </div>
+
+            <!-- Stack Group 1 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Languages & Core</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-python">Python</span>
+                <span class="tech-pill tech-numpy">NumPy</span>
+                <span class="tech-pill tech-pandas">Pandas</span>
+              </div>
+            </div>
+
+            <!-- Stack Group 2 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Machine Learning</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-scikit">Scikit-learn</span>
+                <span class="tech-pill tech-tf">Ensemble Voting</span>
+                <span class="tech-pill tech-chart">Cross-Validation</span>
+              </div>
+            </div>
+
+            <!-- Stack Group 3 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Evaluation & Metrics</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-lime">ROC-AUC</span>
+                <span class="tech-pill tech-resnet">Brier Score</span>
+                <span class="tech-pill tech-xai">Precision-Recall</span>
+              </div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <!-- CTA Actions -->
+            <div class="sidebar-actions">
+              <a href="https://github.com" target="_blank" rel="noopener" class="sidebar-btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>View Live Demo</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="sidebar-btn-outline">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>&copy; 2026 Chaity Rani Ghosh &middot; Computer Science &amp; Engineering</span>
+      <a href="../index.html#projects" class="to-top">&larr; Back to Projects</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaity Rani Ghosh | Portfolio</title>
+  <meta name="description"
+    content="Computer vision transfer learning pipeline on custom self-curated dataset with ResNet50, Grad-CAM, and LIME.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand" title="Chaity Rani Ghosh Portfolio">
+        <span class="brand-text">CHAITY</span><span class="brand-dot">.</span>
+      </a>
+
+      <div class="nav-links-wrap" id="navLinks">
+        <nav class="nav-links">
+          <a href="../index.html#about" class="nav-item">About</a>
+          <a href="../index.html#skills" class="nav-item">Skills</a>
+          <a href="../index.html#experience" class="nav-item">Experience</a>
+          <a href="../index.html#education" class="nav-item">Education</a>
+          <a href="../index.html#projects" class="nav-item active">Projects</a>
+          <a href="../index.html#research" class="nav-item">Research</a>
+          <a href="../index.html#achievements" class="nav-item">Achievements</a>
+        </nav>
+
+        <a href="../index.html#contact" class="nav-cta-btn">Get In Touch</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="project-detail-main">
+    <div class="project-detail-container">
+
+      <!-- Breadcrumbs & Back Bar -->
+      <div class="project-back-bar">
+        <a href="../index.html#projects" class="project-back-link">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Back to Projects</span>
+        </a>
+        <span class="project-breadcrumb-badge">Projects / Computer Vision</span>
+      </div>
+
+      <!-- Hero Poster Showcase -->
+      <div class="project-hero-showcase">
+        <!-- Add your high-resolution project screenshot here: <img src="../assets/bangla_name_preview.png" alt="Handwritten Bangla Name Recognition & XAI"> -->
+        <img src="" alt="Handwritten Bangla Name Recognition & XAI Preview">
+        <div class="project-showcase-gradient"></div>
+      </div>
+
+      <!-- Main Two-Column Layout -->
+      <div class="project-detail-layout">
+
+        <!-- Left Column: Comprehensive Narrative -->
+        <div class="project-detail-content">
+
+          <!-- Meta Pill Row -->
+          <div class="project-meta-pill-row">
+            <span class="project-category-chip">
+              <i class="fa-solid fa-brain"></i>
+              Computer Vision
+            </span>
+            <span class="project-date-chip">
+              <i class="fa-regular fa-calendar-alt"></i>
+              2025 &middot; Deep Learning &amp; XAI
+            </span>
+          </div>
+
+          <h1 class="project-detail-title">Handwritten Bangla Name Recognition &amp; XAI</h1>
+          <p class="project-detail-tagline">
+            An interpretable transfer learning pipeline on custom self-curated handwritten Bangla script, featuring
+            ResNet50 (83.89% test accuracy), Grad-CAM heatmaps, and local LIME explanations.
+          </p>
+
+          <!-- Section 1: Overview -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Project Overview</span>
+            </h2>
+            <p class="detail-body-text">
+              Bangla handwriting exhibits rich cursive geometry, intricate vowel-sign attachments (kar/fola), and high
+              intra-writer variation, making automated transcription a non-trivial optical character and word
+              recognition challenge.
+            </p>
+            <p class="detail-body-text" style="margin-top: 14px;">
+              This research engineered an end-to-end recognition architecture utilizing transfer learning across deep
+              convolutional representations. In addition to achieving competitive test accuracy (83.89%), the project
+              places explainability at the center: utilizing Grad-CAM to visualize neural attention maps and LIME to
+              generate interpretable visual attributions that reveal which structural strokes governed the classifier's
+              decisions.
+            </p>
+          </section>
+
+          <!-- Section 2: Key Features (2x2 Grid) -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-star"></i>
+              <span>Key Features</span>
+            </h2>
+
+            <div class="detail-feature-grid">
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3 class="feature-card-title">ResNet50 Deep Backbone</h3>
+                <p class="feature-card-desc">
+                  Leverages deep residual bottlenecks with specialized fine-tuning layers and adaptive learning rate
+                  schedulers to capture multi-scale stroke patterns.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-fire"></i>
+                </div>
+                <h3 class="feature-card-title">Grad-CAM Spatial Heatmaps</h3>
+                <p class="feature-card-desc">
+                  Extracts gradients entering the final convolutional layer to project dense heatmaps over cursive
+                  characters, verifying focal attention on phonemic roots.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="feature-card-title">Local LIME Explanations</h3>
+                <p class="feature-card-desc">
+                  Partitions handwritten samples into superpixels to inspect which positive and negative segments drove
+                  category logit probabilities.
+                </p>
+              </div>
+
+              <div class="detail-feature-card">
+                <div class="feature-card-icon">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <h3 class="feature-card-title">Curated Dataset & Augmentation</h3>
+                <p class="feature-card-desc">
+                  Constructed with an extensive custom dataset featuring multi-writer samples subjected to affine shear,
+                  morphological dilation, and elastic deformations.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3: Technical Challenges Faced -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Technical Challenges Faced</span>
+            </h2>
+
+            <div class="detail-info-cards">
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>High Inter-Class Stroke Similarity:</strong> Distinct Bangla characters frequently differ only
+                  by subtle upper-matra marks or delicate loops. Implemented center-loss penalization to pull
+                  intra-class representations tightly together while forcing larger inter-class margins.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Superpixel Granularity in LIME:</strong> Standard QuickShift segmentation yielded superpixels
+                  too coarse to reflect delicate pen strokes. Refined kernel size and distance metrics to align
+                  segmentation boundaries tightly with ink traces.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-chevron-right info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Generalization Across Diverse Pen Pressures:</strong> Variations in ballpoint versus gel pens
+                  created differing stroke thicknesses. Applied contrast-limited adaptive histogram equalization (CLAHE)
+                  and Otsu binarization during image preprocessing.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 4: Future Roadmap -->
+          <section class="detail-section">
+            <h2 class="detail-section-title">
+              <i class="fa-solid fa-rocket"></i>
+              <span>Improvements & Future Roadmap</span>
+            </h2>
+
+            <div class="detail-info-cards">
+              <div class="detail-info-card">
+                <i class="fa-solid fa-circle-check info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Vision Transformer (ViT) Backbone:</strong> Benchmarking patch-based self-attention mechanisms
+                  against CNN backbones to evaluate global stroke context modeling.
+                </div>
+              </div>
+
+              <div class="detail-info-card">
+                <i class="fa-solid fa-circle-check info-card-bullet"></i>
+                <div class="info-card-text">
+                  <strong>Real-Time Canvas Interface:</strong> Building an in-browser pen digitizer where users can
+                  write characters live on touch screens and observe instantaneous Grad-CAM attributions.
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right Column: Sticky Sidebar -->
+        <aside class="project-detail-sidebar">
+          <div class="sidebar-box">
+            <div class="sidebar-title">
+              <span class="sidebar-title-bar"></span>
+              <span>Tech Stack</span>
+            </div>
+
+            <!-- Stack Group 1 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Deep Learning & Frameworks</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-tf">TensorFlow</span>
+                <span class="tech-pill tech-resnet">ResNet50</span>
+                <span class="tech-pill tech-python">Keras</span>
+              </div>
+            </div>
+
+            <!-- Stack Group 2 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Explainability (XAI)</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-xai">Grad-CAM</span>
+                <span class="tech-pill tech-lime">LIME</span>
+                <span class="tech-pill tech-chart">Heatmaps</span>
+              </div>
+            </div>
+
+            <!-- Stack Group 3 -->
+            <div class="stack-group">
+              <div class="stack-group-title">Image Processing</div>
+              <div class="sidebar-tech-wrap">
+                <span class="tech-pill tech-numpy">OpenCV</span>
+                <span class="tech-pill tech-scikit">Scikit-Image</span>
+                <span class="tech-pill tech-pandas">Matplotlib</span>
+              </div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <!-- CTA Actions -->
+            <div class="sidebar-actions">
+              <a href="https://github.com" target="_blank" rel="noopener" class="sidebar-btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>View Live Demo</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="sidebar-btn-outline">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>&copy; 2026 Chaity Rani Ghosh &middot; Computer Science &amp; Engineering</span>
+      <a href="../index.html#projects" class="to-top">&larr; Back to Projects</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>
