@@ -76,22 +76,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  // 1. Mobile Navigation Toggle
+  // 1. Mobile Navigation Toggle (Slide-in Drawer)
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
+  const navBackdrop = document.getElementById('navBackdrop');
+
+  function openNav() {
+    if (navLinks) navLinks.classList.add('open');
+    if (navBackdrop) navBackdrop.classList.add('open');
+    document.body.classList.add('nav-open');
+    if (navToggle) {
+      navToggle.setAttribute('aria-expanded', 'true');
+      const icon = navToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      }
+    }
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeNav() {
+    if (navLinks) navLinks.classList.remove('open');
+    if (navBackdrop) navBackdrop.classList.remove('open');
+    document.body.classList.remove('nav-open');
+    if (navToggle) {
+      navToggle.setAttribute('aria-expanded', 'false');
+      const icon = navToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    }
+    document.body.style.overflow = '';
+  }
 
   if (navToggle && navLinks) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navLinks.classList.contains('open');
+      if (isOpen) {
+        closeNav();
+      } else {
+        openNav();
+      }
     });
 
-    // Close menu when clicking on any nav link
-    navLinks.querySelectorAll('.nav-item').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', () => {
+        closeNav();
       });
+    }
+
+    // Close menu when clicking on any nav link or CTA button inside drawer
+    navLinks.querySelectorAll('.nav-item, .nav-cta-btn').forEach(link => {
+      link.addEventListener('click', () => {
+        closeNav();
+      });
+    });
+
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        closeNav();
+      }
     });
   }
 
